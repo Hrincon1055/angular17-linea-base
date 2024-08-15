@@ -1,0 +1,21 @@
+<div class="layout-wrapper" [ngClass]="containerClass">
+  <div class="layout-main-container">
+    <app-header />
+    <div class="layout-sidebar">
+      <app-sidebar />
+    </div>
+    <main class="layout-main">
+      <div class="flex flex-row mb-1">
+        <small
+          (click)="goBack()"
+          class="text-primary font-bold cursor-pointer text-base"
+        >
+          <i class="pi pi-arrow-left text-sm mr-1"></i>Regresar</small
+        >
+      </div>
+      <router-outlet />
+    </main>
+    <app-footer />
+  </div>
+  <div class="layout-mask"></div>
+</div>

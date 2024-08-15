@@ -1,0 +1,13 @@
+<div class="layout-wrapper" [ngClass]="containerClass">
+  <div class="layout-main-container">
+    <app-header />
+    <main class="layout-main">
+      <div class="flex flex-column align-items-center h-auto">
+        <div class="w-full md:w-9 h-auto">
+          <router-outlet />
+        </div>
+      </div>
+    </main>
+    <app-footer />
+  </div>
+</div>
